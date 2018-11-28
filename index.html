@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<form>
+		First Name:<input type="text" name="firstname"><br>
+		Last Name:<input type="text" name="lastname"><br>
+		Email:<input type="email" name="email" required><br>
+		Password:<input type="Password" name="Password" min="5"><br> <!--minimum charater set to 5-->
+		Birthday:<input type="date" name="dob"><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="male">Male<br> <!--name="gender" specifies these three comes under one otherwise all 3 will be choosed.-->
+		<input type="radio" name="gender" value="female">Female<br>
+		<input type="radio" name="gender" value="other">Other<br>
+		Pets:<br>
+		
+		<input type="checkbox" name="cat" value="cat"> Cat<br>
+		<input type="checkbox" name="dog" value="dog"> Dog<br>
+		Cars:
+		<select multiple name="cars">  <!--We can choose more than one-->
+			<option value="volvo" name="volvo">Volvo</option>
+			<option value="Audi" name="audi">Audi</option>
+		</select>
+		<br>
+		Cars:
+		<select>          <!--Multiple is not there so we can choose only one-->
+			<option value="volvo1" name="volvo1">Volvo</option>
+			<option value="Audi1" name="audi1">Audi</option>
+		</select><br>
+		<input type="submit" value="Register!">
+		<input type="reset">
+	</form>
+</body>
+</html>
